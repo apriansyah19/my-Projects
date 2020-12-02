@@ -1,5 +1,5 @@
 <template>
- <b-navbar toggleable="lg" type="dark" variant="secondary">
+ <b-navbar toggleable="lg" variant="light">
     <div class="container">
       <b-navbar-brand href="#">Satria Resto</b-navbar-brand>
 
@@ -17,7 +17,7 @@
             Keranjang
             <b-icon-bag></b-icon-bag>
             <span class="badge badge-success ml-2">{{
-              jumlahPesanan.length
+              keranjangs ? keranjangs.length : jumlahPesanan.length
             }}</span>
           </router-link>
         </b-navbar-nav>
@@ -31,6 +31,7 @@ import axios from "axios";
 
 export default {
   name: "Navbar",
+  props: ["keranjangs"],
   data() {
     return {
       jumlahPesanan: [],

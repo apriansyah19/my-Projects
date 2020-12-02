@@ -52,7 +52,7 @@
               class="btn btn-success mt-3"
               @click="pemesanan"
             >
-              <b-icon-cart></b-icon-cart>Pesan 
+              <b-icon-cart></b-icon-cart> Pesan 
               <strong>Rp. {{ convertToRupiah(sumHarga) }} </strong>
             </button>
           </form>
