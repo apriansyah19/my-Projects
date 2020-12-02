@@ -3,7 +3,7 @@
 }
 
 .router-link-exact-active {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .btn-success {

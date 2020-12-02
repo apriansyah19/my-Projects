@@ -1,43 +1,29 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <b-navbar toggleable="lg" type="dark" variant="secondary">
     <div class="container">
-      <a class="navbar-brand" href="#">Satria Resto</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <b-navbar-brand href="#">Satria Resto</b-navbar-brand>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <router-link class="nav-link" to="/"> Home </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/foods"> Foods </router-link>
-          </li>
-        </ul>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <router-link class="nav-link" to="/keranjang">
-              Keranjang
-              <b-icon-bag></b-icon-bag>
-              <span class="badge badge-success ml-2">{{
-                jumlahPesanan.length
-              }}</span>
-            </router-link>
-          </li>
-        </ul>
-      </div>
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <router-link class="nav-link" to="/"> Home </router-link>
+          <router-link class="nav-link" to="/foods"> Foods </router-link>
+        </b-navbar-nav>
+
+        <!-- Right aligned nav items -->
+        <b-navbar-nav class="ml-auto">
+          <router-link class="nav-link" to="/keranjang">
+            Keranjang
+            <b-icon-bag></b-icon-bag>
+            <span class="badge badge-success ml-2">{{
+              jumlahPesanan.length
+            }}</span>
+          </router-link>
+        </b-navbar-nav>
+      </b-collapse>
     </div>
-  </nav>
+  </b-navbar>
 </template>
 
 <script>
