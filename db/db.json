@@ -1,4 +1,13 @@
 {
+  "dataLogin": [
+    {
+      "username": "satria",
+      "fullname": "Apriansyah",
+      "password": "apri",
+      "confirmPassword": "apri",
+      "id": 1
+    }
+  ],
   "best-products": [
     {
       "id": 1,
@@ -109,25 +118,5 @@
   ],
   "keranjangs": [],
   "pesanans": [
-    {
-      "nama": "sa",
-      "no_meja": "1",
-      "keranjangs": [
-        {
-          "jumlah_pemesanan": "1",
-          "total_harga": 16000,
-          "productsTemp": {
-            "id": 1,
-            "code": "K-01",
-            "nama": "Sate Ayam",
-            "harga": 16000,
-            "is_ready": true,
-            "gambar": "sate-ayam.jpg"
-          },
-          "id": 1
-        }
-      ],
-      "id": 1
-    }
   ]
 }
