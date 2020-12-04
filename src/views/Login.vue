@@ -9,7 +9,7 @@
             <div class="card">
               <div class="card-body">
                 <div class="form-group">
-                  <label for="username">UserName</label>
+                  <label for="username">Username</label>
                   <input v-model="username" type="text" class="form-control" />
                 </div>
                 <div class="form-group">
@@ -62,7 +62,8 @@ export default {
           if (response.data.length !== 0) {
             for (let i = 0; i < response.data.length; i++) {
               if (response.data[i].password === this.password) {
-                this.$router.push({ path: "/home" });
+                this.$emit("authenti", true);
+                this.$router.push({ path: "/" });
               } else {
                 this.$toast.error("Username dan Password anda salah", {
                   type: "error",

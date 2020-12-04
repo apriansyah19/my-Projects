@@ -7,13 +7,13 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <router-link class="nav-link" to="/home"> Home </router-link>
+          <router-link class="nav-link" to="/"> Home </router-link>
           <router-link class="nav-link" to="/foods"> Foods </router-link>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <router-link class="nav-link" to="/"> <button type="button" class="btn btn-dark btn-sm">Logout</button></router-link>
+          <router-link class="nav-link" to="/login"> <button type="button" class="btn btn-dark btn-sm">Logout</button></router-link>
           <router-link class="nav-link" to="/keranjang">
             Keranjang
             <b-icon-bag></b-icon-bag>

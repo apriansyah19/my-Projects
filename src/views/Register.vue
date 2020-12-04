@@ -85,7 +85,7 @@ export default {
         axios
           .post("http://localhost:3000/dataLogin", this.dataRegis)
           .then(() => {
-            this.$router.push({ path: "/" });
+            this.$router.push({ path: "/login" });
             this.$toast.success("Register Berhasil, Sialakan Login.", {
               type: "success",
               position: "top-right",
@@ -97,7 +97,7 @@ export default {
       }
     },
     loginPage() {
-      this.$router.push({ path: "/" });
+      this.$router.push({ path: "/login" });
     },
   },
 };
