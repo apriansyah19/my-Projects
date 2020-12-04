@@ -12,6 +12,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
     path: '/login',
     name: 'Login',
     component: Login
@@ -20,11 +25,6 @@ const routes = [
     path: '/register',
     name: 'Register',
     component: Register
-  },
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
   },
   {
     path: '/foods',

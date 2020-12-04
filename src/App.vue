@@ -18,13 +18,13 @@ export default {
     }
   },
   mounted() {
-     if (!this.authenticated) {
-      this.$router.replace({ name: "Login" });
+     if (!this.authenti) {
+      this.$router.push({ path: "/login"})
     }
   },
   methods: {
     setAuthenti(status) {
-      this.authenticated = status;
+      this.authenti = status;
     }
   },
 }

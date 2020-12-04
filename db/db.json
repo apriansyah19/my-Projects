@@ -6,6 +6,13 @@
       "password": "apri",
       "confirmPassword": "apri",
       "id": 1
+    },
+    {
+      "username": "apriansyah",
+      "fullname": "sat",
+      "password": "satri",
+      "confirmPassword": "satri",
+      "id": 2
     }
   ],
   "best-products": [
@@ -116,7 +123,21 @@
       "gambar": "lontong-opor-ayam.jpg"
     }
   ],
-  "keranjangs": [],
-  "pesanans": [
-  ]
+  "keranjangs": [
+    {
+      "jumlah_pemesanan": "1",
+      "keterangan": "1",
+      "total_harga": 14000,
+      "productsTemp": {
+        "id": 2,
+        "code": "K-02",
+        "nama": "Nasi Goreng Telur",
+        "harga": 14000,
+        "is_ready": true,
+        "gambar": "nasi-goreng-telor.jpg"
+      },
+      "id": 1
+    }
+  ],
+  "pesanans": []
 }
